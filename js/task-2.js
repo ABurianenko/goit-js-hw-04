@@ -13,7 +13,9 @@ function calcAverageCalories(days) {
         totalCalories += calory;
     }
     
-    return totalCalories / totalDays;
+    if (totalDays>0) {
+        return totalCalories / totalDays;
+    } else {return 0}
 }
 
 console.log(
